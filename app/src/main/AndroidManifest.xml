@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shenglin.studyingonline">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyLeanCloudApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login_01">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main_01"
+            android:label="@string/title_activity_main_01" />
+        <activity android:name=".List_02" />
+        <activity
+            android:name=".List_03"
+            android:label="java" />
+        <activity android:name=".info_AboutUs" />
+        <activity android:name=".info_my" />
+        <activity android:name=".info_self" />
+        <activity android:name=".Login_02" />
+        <activity android:name=".Login_03" />
+        <activity android:name=".List_04" />
+        <activity android:name=".note" />
+        <activity android:name=".answer" />
+        <activity android:name=".new_note" />
+        <activity android:name=".new_taolun" />
+        <activity android:name=".new_wenti"></activity>
+    </application>
+
+</manifest>
